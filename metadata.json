@@ -1,0 +1,6 @@
+{
+  "name": "Los Patrones Mini Market",
+  "description": "Sistema integral de comercio en línea, punto de venta presencial (POS), control de inventario, caja y comprobantes de venta para Los Patrones Mini Market.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Montserrat', system-ui, sans-serif;
+  --font-display: 'Bebas Neue', Impact, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+@layer base {
+  :root {
+    --brand-blue: #2054C9;
+    --brand-blue-hover: #1943A3;
+    --brand-yellow: #F9D94A;
+    --brand-green: #13B64B;
+    --brand-green-text: #0A7830;
+    --brand-cream: #FFF4E5;
+    --brand-carbon: #202633;
+    --brand-white: #FFFFFF;
+    --font-display: 'Bebas Neue', Impact, sans-serif;
+    --font-sans: 'Montserrat', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FFF4E5;
+    color: #202633;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .font-display, .font-brand {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .font-mono, .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+}
